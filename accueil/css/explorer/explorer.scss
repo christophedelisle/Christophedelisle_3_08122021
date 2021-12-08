@@ -1,34 +1,42 @@
+$primaire: #9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
+$gris1: rgb(246, 246, 246);
+$gris2: rgb(230, 230, 230);
+$gris3: rgb(200, 199, 199);
+
 #explorer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  #map {
+  &__map {
     width: 100%;
     display: flex;
     align-items: baseline;
-    background-color: rgb(230, 230, 230);
+    background-color: $gris2;
     justify-content: center;
-    box-shadow: inset 0px 2px 2px rgb(200, 199, 199);
+    box-shadow: inset 0px 2px 2px $gris3;
     #point {
       padding-right: 15px;
     }
   }
-  #reserver {
+  &__reserver {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: 300;
     width: 100%;
-    background-color: rgb(246, 246, 246);
+    background-color: $gris1;
     padding: 20px 0px;
     p {
       padding: 0px 20px 0px 20px;
     }
-
-    #btn_explorer {
-      background: linear-gradient(#ff79da, #9356dc);
+    a {
+      text-decoration: none;
+    }
+    &__btn {
+      background: linear-gradient($secondaire, $primaire);
       padding: 5px 60px;
       height: 50px;
       color: white;

@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-#explorer #map {
+#explorer__map {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,11 +28,11 @@
   box-shadow: inset 0px 2px 2px #c8c7c7;
 }
 
-#explorer #map #point {
+#explorer__map #point {
   padding-right: 15px;
 }
 
-#explorer #reserver {
+#explorer__reserver {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,11 +49,15 @@
   padding: 20px 0px;
 }
 
-#explorer #reserver p {
+#explorer__reserver p {
   padding: 0px 20px 0px 20px;
 }
 
-#explorer #reserver #btn_explorer {
+#explorer__reserver a {
+  text-decoration: none;
+}
+
+#explorer__reserver__btn {
   background: -webkit-gradient(
     linear,
     left top,
@@ -79,7 +83,7 @@
   padding: 0px 20px 0px 20px;
 }
 
-#explorer #reserver h2 {
+#explorer__reserver h2 {
   margin: 0px;
   padding: 0px 20px 0px 20px;
 }
