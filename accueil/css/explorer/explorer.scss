@@ -4,7 +4,9 @@ $tertiaire: #99e2d0;
 $gris1: rgb(246, 246, 246);
 $gris2: rgb(230, 230, 230);
 $gris3: rgb(200, 199, 199);
-
+@mixin explorer-padding {
+  padding: 0px 20px 0px 20px;
+}
 #explorer {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,7 @@ $gris3: rgb(200, 199, 199);
     background-color: $gris2;
     justify-content: center;
     box-shadow: inset 0px 2px 2px $gris3;
-    #point {
+    &__point {
       padding-right: 15px;
     }
   }
@@ -30,14 +32,13 @@ $gris3: rgb(200, 199, 199);
     background-color: $gris1;
     padding: 20px 0px;
     p {
-      padding: 0px 20px 0px 20px;
+      @include explorer-padding;
     }
     a {
       text-decoration: none;
     }
     &__btn {
       background: linear-gradient($secondaire, $primaire);
-      padding: 5px 60px;
       height: 50px;
       color: white;
       border-radius: 50px;
@@ -45,11 +46,11 @@ $gris3: rgb(200, 199, 199);
       justify-content: center;
       align-items: center;
       font-weight: 500;
-      padding: 0px 20px 0px 20px;
+      @include explorer-padding;
     }
     h2 {
       margin: 0px;
-      padding: 0px 20px 0px 20px;
+      @include explorer-padding;
     }
   }
 }
