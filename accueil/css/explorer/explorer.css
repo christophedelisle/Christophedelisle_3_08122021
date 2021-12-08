@@ -1,0 +1,86 @@
+#explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+#explorer #map {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  background-color: #e6e6e6;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-shadow: inset 0px 2px 2px #c8c7c7;
+  box-shadow: inset 0px 2px 2px #c8c7c7;
+}
+
+#explorer #map #point {
+  padding-right: 15px;
+}
+
+#explorer #reserver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 300;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 20px 0px;
+}
+
+#explorer #reserver p {
+  padding: 0px 20px 0px 20px;
+}
+
+#explorer #reserver #btn_explorer {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 5px 60px;
+  height: 50px;
+  color: white;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 0px 20px 0px 20px;
+}
+
+#explorer #reserver h2 {
+  margin: 0px;
+  padding: 0px 20px 0px 20px;
+}
+/*# sourceMappingURL=explorer.css.map */
