@@ -3,7 +3,7 @@ $secondaire: #ff79da;
 $tertiaire: #99e2d0;
 $gris1: rgb(246, 246, 246);
 $gris2: rgb(230, 230, 230);
-$gris3: rgb(200, 199, 199);
+$gris3: rgb(130, 130, 130);
 @mixin explorer-padding {
   padding: 0px 20px 0px 20px;
 }
@@ -18,7 +18,7 @@ $gris3: rgb(200, 199, 199);
     align-items: baseline;
     background-color: $gris2;
     justify-content: center;
-    box-shadow: inset 0px 2px 2px $gris3;
+    box-shadow: inset 0px 1px 4px $gris3;
     &__point {
       padding-right: 15px;
     }
@@ -30,7 +30,7 @@ $gris3: rgb(200, 199, 199);
     font-weight: 300;
     width: 100%;
     background-color: $gris1;
-    padding: 20px 0px;
+    padding: 50px 0px;
     p {
       @include explorer-padding;
     }
@@ -43,10 +43,10 @@ $gris3: rgb(200, 199, 199);
       color: white;
       border-radius: 50px;
       display: flex;
-      justify-content: center;
       align-items: center;
       font-weight: 500;
       @include explorer-padding;
+      box-shadow: 5px 5px 5px 2px $gris2;
     }
     h2 {
       margin: 0px;
