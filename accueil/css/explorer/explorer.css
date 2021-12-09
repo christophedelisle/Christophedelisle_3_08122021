@@ -24,8 +24,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: inset 0px 2px 2px #c8c7c7;
-          box-shadow: inset 0px 2px 2px #c8c7c7;
+  -webkit-box-shadow: inset 0px 1px 4px #828282;
+          box-shadow: inset 0px 1px 4px #828282;
 }
 
 #explorer__map__point {
@@ -46,7 +46,7 @@
   font-weight: 300;
   width: 100%;
   background-color: #f6f6f6;
-  padding: 20px 0px;
+  padding: 50px 0px;
 }
 
 #explorer__reserver p {
@@ -66,14 +66,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
   padding: 0px 20px 0px 20px;
+  -webkit-box-shadow: 5px 5px 5px 2px #e6e6e6;
+          box-shadow: 5px 5px 5px 2px #e6e6e6;
 }
 
 #explorer__reserver h2 {

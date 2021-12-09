@@ -1,0 +1,65 @@
+#fonctmnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 30px 10px 30px;
+}
+
+#fonctmnt a:visited {
+  color: black;
+}
+
+#fonctmnt ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.fonctmnt__choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0px 8px 8px #e6e6e6;
+          box-shadow: 0px 8px 8px #e6e6e6;
+  margin: 20px 0px;
+  height: 80px;
+}
+
+.fonctmnt__choix__logo {
+  padding: 0px 30px 0px 30px;
+  font-size: 25px;
+  color: #828282;
+}
+
+.fonctmnt__choix a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-left: -12px;
+  border-radius: 25%;
+  text-decoration: none;
+}
+
+.fonctmnt__choix a p {
+  font-size: 20px;
+}
+
+.fonctmnt__choix__num {
+  background-color: #9356dc;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: white;
+}
+/*# sourceMappingURL=fonctionnement.css.map */
