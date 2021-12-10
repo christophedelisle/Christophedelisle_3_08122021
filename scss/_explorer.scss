@@ -1,12 +1,3 @@
-$primaire: #9356dc;
-$secondaire: #ff79da;
-$tertiaire: #99e2d0;
-$gris1: rgb(246, 246, 246);
-$gris2: rgb(230, 230, 230);
-$gris3: rgb(130, 130, 130);
-@mixin explorer-padding {
-  padding: 0px 20px 0px 20px;
-}
 #explorer {
   display: flex;
   flex-direction: column;
