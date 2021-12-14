@@ -1,3 +1,20 @@
-@mixin explorer-padding {
-  padding: 0px 20px 0px 20px;
+@mixin sides-padding {
+  padding: 0px 20px;
+}
+@mixin box-shadow {
+  box-shadow: 5px 5px 8px 2px $gris2;
+}
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+}
+@mixin btn {
+  background: linear-gradient($secondaire, $primaire);
+  height: 50px;
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  @include flex_center;
+  font-weight: 500;
+  @include sides-padding;
+  @include box-shadow;
 }

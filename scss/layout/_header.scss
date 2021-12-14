@@ -3,15 +3,20 @@
 }
 body {
   font-family: "Roboto";
-
   margin: 0px;
 }
 header {
   #logo {
-    text-align: center;
-    margin: 10px 0px;
-    img {
-      width: 150px;
+    text-decoration: none;
+    h1 {
+      text-align: center;
+      font-family: Shrikhand;
+      font-size: 30px;
+      margin: 5px 0px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
     }
   }
 }

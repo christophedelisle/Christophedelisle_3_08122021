@@ -7,6 +7,7 @@ footer {
   #logo {
     font-family: Shrikhand;
     font-size: 25px;
+    width: 100%;
 
     p {
       margin: 0px;
@@ -15,15 +16,13 @@ footer {
   ul {
     list-style: none;
     padding: 0px;
-
     p {
       margin: 5px 0px;
     }
   }
   a {
     text-decoration: none;
-    display: flex;
-    align-items: center;
+    @include flex_center;
     color: white;
     .logo {
       padding-right: 15px;
