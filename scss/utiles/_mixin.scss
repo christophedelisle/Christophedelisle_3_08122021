@@ -13,8 +13,11 @@
   height: 50px;
   color: rgb(255, 255, 255);
   border-radius: 50px;
+  width: 60%;
+  min-width: 170px;
   @include flex_center;
   font-weight: 500;
+  justify-content: center;
   @include sides-padding;
   @include box-shadow;
 }
