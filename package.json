@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christophedelisle/Test-projet-3-sans-kraken.git"
+    "url": "git+https://github.com/christophedelisle/projet-3.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/christophedelisle/Test-projet-3-sans-kraken/issues"
+    "url": "https://github.com/christophedelisle/projet-3/issues"
   },
-  "homepage": "https://github.com/christophedelisle/Test-projet-3-sans-kraken#readme"
+  "homepage": "https://github.com/christophedelisle/projet-3#readme"
 }

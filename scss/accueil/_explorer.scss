@@ -20,6 +20,7 @@
     width: 100%;
     background-color: $gris1;
     padding: 50px 0px;
+
     p {
       @include sides-padding;
     }

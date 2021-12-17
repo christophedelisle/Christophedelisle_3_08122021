@@ -19,13 +19,13 @@ footer {
     p {
       margin: 5px 0px;
     }
-  }
-  a {
-    text-decoration: none;
-    @include flex_center;
-    color: white;
-    .logo {
-      padding-right: 15px;
+    a {
+      @include flex_center;
+      text-decoration: none;
+      color: white;
+      .logo {
+        padding-right: 15px;
+      }
     }
   }
   p {

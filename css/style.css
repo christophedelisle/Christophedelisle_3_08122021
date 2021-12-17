@@ -234,13 +234,13 @@ footer ul {
 footer ul p {
   margin: 5px 0px;
 }
-footer a {
-  text-decoration: none;
+footer ul a {
   display: flex;
   align-items: center;
+  text-decoration: none;
   color: white;
 }
-footer a .logo {
+footer ul a .logo {
   padding-right: 15px;
 }
 footer p {
