@@ -108,15 +108,20 @@ header #image_menu img {
   box-shadow: 5px 5px 8px 2px #e6e6e6;
   margin: 20px 0px;
   height: 80px;
+  transition: background-color 0.5s;
 }
-.fonctmnt__choix :hover {
+.fonctmnt__choix .fonctmnt__choix__logo,
+.fonctmnt__choix .fonctmnt__choix__num {
+  transition: color 0.5s, background-color 0.5s;
+}
+.fonctmnt__choix:hover {
   background-color: #f3e5f8;
   border-radius: 25px;
 }
-.fonctmnt__choix :hover .fonctmnt__choix__logo {
+.fonctmnt__choix:hover .fonctmnt__choix__logo {
   color: #9356dc;
 }
-.fonctmnt__choix :hover .fonctmnt__choix__num {
+.fonctmnt__choix:hover .fonctmnt__choix__num {
   background-color: #9356dc;
 }
 .fonctmnt__choix__logo {
@@ -201,16 +206,19 @@ header #image_menu img {
   display: none;
 }
 .article_txt .heart:hover .heart_full {
-  display: contents;
+  opacity: 1;
   font-size: 30px;
-  color: #ff79da;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .article_txt .heart .heart_empty {
   font-size: 30px;
   color: #828282;
 }
 .article_txt .heart .heart_full {
-  display: none;
+  margin-top: -10px;
+  opacity: 0;
 }
 
 footer {
@@ -218,6 +226,7 @@ footer {
   text-decoration: none;
   background-color: #232323;
   color: white;
+  block-size: auto;
 }
 footer #logo {
   font-family: Shrikhand;
@@ -234,17 +243,17 @@ footer ul {
 footer ul p {
   margin: 5px 0px;
 }
-footer ul a {
+footer p {
+  padding: 0px;
+}
+footer a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
 }
-footer ul a .logo {
+footer a .logo {
   padding-right: 15px;
-}
-footer p {
-  padding: 0px;
 }
 
 #menu_main {

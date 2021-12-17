@@ -18,7 +18,13 @@
   @include box-shadow;
   margin: 20px 0px;
   height: 80px;
-  :hover {
+  transition: background-color 0.5s;
+  .fonctmnt__choix__logo,
+  .fonctmnt__choix__num {
+    transition: color 0.5s, background-color 0.5s;
+  }
+
+  &:hover {
     .fonctmnt__choix__logo {
       color: $primaire;
     }

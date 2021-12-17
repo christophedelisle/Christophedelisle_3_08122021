@@ -3,6 +3,7 @@ footer {
   text-decoration: none;
   background-color: rgb(35, 35, 35);
   color: white;
+  block-size: auto;
 
   #logo {
     font-family: Shrikhand;
@@ -19,16 +20,16 @@ footer {
     p {
       margin: 5px 0px;
     }
-    a {
-      @include flex_center;
-      text-decoration: none;
-      color: white;
-      .logo {
-        padding-right: 15px;
-      }
-    }
   }
   p {
     padding: 0px;
+  }
+  a {
+    @include flex_center;
+    text-decoration: none;
+    color: white;
+    .logo {
+      padding-right: 15px;
+    }
   }
 }

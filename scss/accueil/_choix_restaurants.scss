@@ -56,9 +56,11 @@
           display: none;
         }
         .heart_full {
-          display: contents;
+          opacity: 1;
           font-size: 30px;
-          color: $secondaire;
+          background: linear-gradient($secondaire, $primaire);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
       .heart_empty {
@@ -66,7 +68,8 @@
         color: $gris3;
       }
       .heart_full {
-        display: none;
+        margin-top: -10px;
+        opacity: 0;
       }
     }
   }
