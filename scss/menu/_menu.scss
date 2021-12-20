@@ -1,4 +1,4 @@
-#menu_main {
+.menu {
   background-color: $gris1;
   @include sides-padding;
   border-radius: 40px 40px 0px 0px;
@@ -8,13 +8,6 @@
   flex-direction: column;
   align-items: center;
 
-  &__order_btn {
-    @include btn;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    font-size: 20px;
-  }
   &__title {
     @include flex_center;
     justify-content: space-between;
@@ -22,50 +15,125 @@
     h1 {
       font-family: Shrikhand;
     }
-    .heart_empty {
-      font-size: 30px;
-    }
-    &__order_btn {
-      @include btn;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 80px;
-      font-size: 20px;
+    .heart {
+      padding: 5px 20px 0px 0px;
     }
   }
   &__section {
     width: 100%;
     padding-bottom: 30px;
-    h2 {
-      .underligne {
+
+    &__title {
+      &--underligne {
         border-bottom: solid $tertiaire 3px;
       }
       font-size: 20px;
       margin: 0px;
       padding: 0px 0px 20px 0px;
     }
-    article {
+    &__article {
+      width: 100%;
       background-color: white;
       border-radius: 20px;
       margin-bottom: 15px;
       @include box-shadow;
-      h3 {
-        font-size: 20px;
-        margin: 0px;
-        padding: 15px 0px 0px 15px;
-      }
-      p {
-        font-weight: normal;
-        margin: 0px;
-      }
-      #price {
-        @include flex_center;
+      display: flex;
+      justify-content: space-between;
+      .meal {
+        width: 100%;
+        display: flex;
         justify-content: space-between;
-        padding: 10px 20px 15px 15px;
-        .number {
-          font-size: 18px;
+        &__set {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          white-space: nowrap;
+          overflow: hidden;
+
+          &__title {
+            width: 100%;
+            font-size: 20px;
+            margin: 0px;
+            padding: 15px 0px 0px 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          &__complement {
+            @include flex_center;
+            justify-content: space-between;
+            padding: 10px 20px 15px 15px;
+            p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            .meal__price {
+              font-size: 18px;
+              margin: 0px;
+              overflow: visible;
+            }
+          }
+        }
+        .animation {
+          @include flex_center;
+          justify-content: space-around;
+          order: 3;
+          background-color: $tertiaire;
+          color: white;
+          width: 0%;
+          border-radius: 0px 20px 20px 0px;
+          transition: width 0.5s;
+          font-size: 40px;
+          overflow: hidden;
+
+          i {
+            transform: rotate(0deg);
+            transition: transform 0.5s ease-in-out;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          .animation {
+            transform-origin: right;
+            @include flex_center;
+            width: 80px;
+            i {
+              transform: rotate(360deg);
+            }
+          }
         }
       }
     }
   }
+
+  &__order__btn {
+    @include btn;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-size: 20px;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#case-1 {
+  animation-delay: 0.1s;
+}
+
+#case-2 {
+  animation-delay: 0.2s;
+}
+
+#case-3 {
+  animation-delay: 0.3s;
+}
+.menu__section__article {
+  animation: opacity 1s both;
 }

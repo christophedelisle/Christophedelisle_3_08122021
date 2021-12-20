@@ -50,27 +50,28 @@
       font-size: 22px;
       margin: 0px;
     }
-    .heart {
-      &:hover {
-        .heart_empty {
-          display: none;
-        }
-        .heart_full {
-          opacity: 1;
-          font-size: 30px;
-          background: linear-gradient($secondaire, $primaire);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
-      .heart_empty {
-        font-size: 30px;
-        color: $gris3;
-      }
-      .heart_full {
-        margin-top: -10px;
-        opacity: 0;
-      }
+  }
+}
+.heart {
+  &:hover {
+    cursor: pointer;
+    .heart_empty {
+      display: none;
     }
+    .heart_full {
+      opacity: 1;
+      font-size: 30px;
+      background: linear-gradient($secondaire, $primaire);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .heart_empty {
+    font-size: 30px;
+    color: $gris3;
+  }
+  .heart_full {
+    margin-top: -10px;
+    opacity: 0;
   }
 }

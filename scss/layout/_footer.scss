@@ -19,10 +19,8 @@ footer {
     padding: 0px;
     p {
       margin: 5px 0px;
+      padding: 0px;
     }
-  }
-  p {
-    padding: 0px;
   }
   a {
     @include flex_center;
