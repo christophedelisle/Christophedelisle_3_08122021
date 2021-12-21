@@ -37,17 +37,14 @@
       border-radius: 20px;
       margin-bottom: 15px;
       @include box-shadow;
-      display: flex;
-      justify-content: space-between;
+      @include flex_space-between;
       .meal {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        @include flex_space-between;
         &__set {
           width: 100%;
-          display: flex;
+          @include flex_space-between;
           flex-direction: column;
-          justify-content: space-between;
           white-space: nowrap;
           overflow: hidden;
 
@@ -81,12 +78,11 @@
           order: 3;
           background-color: $tertiaire;
           color: white;
-          width: 0%;
-          border-radius: 0px 20px 20px 0px;
-          transition: width 0.5s;
           font-size: 40px;
+          border-radius: 0px 20px 20px 0px;
+          width: 0%;
+          transition: width 0.5s;
           overflow: hidden;
-
           i {
             transform: rotate(0deg);
             transition: transform 0.5s ease-in-out;
@@ -95,7 +91,6 @@
         &:hover {
           cursor: pointer;
           .animation {
-            transform-origin: right;
             @include flex_center;
             width: 80px;
             i {
@@ -113,27 +108,34 @@
     justify-content: center;
     margin-bottom: 80px;
     font-size: 20px;
+    transition: transform 1s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
-@keyframes opacity {
-  0% {
+
+@keyframes slide {
+  from {
+    transform: translateY(20px);
     opacity: 0;
   }
-  100% {
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
-#case-1 {
-  animation-delay: 0.1s;
+.menu__section__article {
+  animation: slide 1.5s ease backwards;
 }
-
-#case-2 {
+#article1 {
   animation-delay: 0.2s;
 }
 
-#case-3 {
-  animation-delay: 0.3s;
+#article2 {
+  animation-delay: 0.4s;
 }
-.menu__section__article {
-  animation: opacity 1s both;
+
+#article3 {
+  animation-delay: 0.5s;
 }

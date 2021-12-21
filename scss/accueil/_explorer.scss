@@ -1,4 +1,4 @@
-#explorer {
+.explorer {
   @include flex_center;
   flex-direction: column;
   text-align: center;
@@ -9,7 +9,7 @@
     background-color: $gris2;
     justify-content: center;
     box-shadow: inset 0px 1px 4px $gris3;
-    &__point {
+    i {
       padding-right: 15px;
     }
   }
@@ -29,10 +29,14 @@
     }
     &__btn {
       @include btn;
+      transition: transform 1s;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
-    h2 {
-      margin: 0px;
-      @include sides-padding;
-    }
+  }
+  h2 {
+    margin: 0px;
+    @include sides-padding;
   }
 }

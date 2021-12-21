@@ -3,31 +3,32 @@ footer {
   text-decoration: none;
   background-color: rgb(35, 35, 35);
   color: white;
-  block-size: auto;
 
   #logo {
     font-family: Shrikhand;
     font-size: 25px;
-    width: 100%;
-
-    p {
-      margin: 0px;
+    a {
+      text-decoration: none;
+      color: white;
     }
   }
   ul {
     list-style: none;
     padding: 0px;
-    p {
-      margin: 5px 0px;
-      padding: 0px;
-    }
-  }
-  a {
-    @include flex_center;
-    text-decoration: none;
-    color: white;
-    .logo {
-      padding-right: 15px;
+    display: inline-block;
+    li {
+      a {
+        @include flex_center;
+        text-decoration: none;
+        color: white;
+        .logo {
+          padding-right: 15px;
+        }
+        p {
+          margin: 5px 0px;
+          padding: 0px;
+        }
+      }
     }
   }
 }

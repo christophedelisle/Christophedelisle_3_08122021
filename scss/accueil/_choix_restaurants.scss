@@ -1,57 +1,63 @@
-#restaurants {
+.restaurants {
   padding: 50px 20px 30px 20px;
   background-color: $gris1;
   a:visited {
     color: black;
   }
-}
-.article {
-  margin-bottom: 30px;
-  @include box-shadow;
-  border-radius: 20px;
-  position: relative;
 
-  .new {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    background-color: $tertiaire;
-    color: rgb(2, 133, 52);
-    border-radius: 3px;
-    p {
-      margin: 10px;
+  &__article {
+    margin-bottom: 30px;
+    @include box-shadow;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 1s;
+    &:hover {
+      transform: scale(1.02);
     }
-  }
-  a {
-    text-decoration: none;
-  }
-  &_img {
-    height: 250px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 20px 20px 0px 0px;
-    }
-  }
-  &_txt {
-    @include flex_center;
-    justify-content: space-between;
-    background-color: white;
-    list-style: none;
-    padding: 20px 20px 20px 20px;
-    border-radius: 0px 0px 20px 20px;
 
-    p {
-      font-size: 18px;
-      margin: 5px 0px 0px 0px;
+    .new {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      background-color: $tertiaire;
+      color: rgb(2, 133, 52);
+      border-radius: 3px;
+      p {
+        margin: 10px;
+      }
     }
-    h3 {
-      font-size: 22px;
-      margin: 0px;
+    a {
+      text-decoration: none;
+    }
+    &__img {
+      height: 250px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+    &__txt {
+      @include flex_center;
+      justify-content: space-between;
+      background-color: white;
+      list-style: none;
+      padding: 20px 20px 20px 20px;
+      border-radius: 0px 0px 20px 20px;
+
+      p {
+        font-size: 18px;
+        margin: 5px 0px 0px 0px;
+      }
+      h3 {
+        font-size: 22px;
+        margin: 0px;
+      }
     }
   }
 }
+
 .heart {
   &:hover {
     cursor: pointer;
@@ -62,8 +68,9 @@
       opacity: 1;
       font-size: 30px;
       background: linear-gradient($secondaire, $primaire);
+      background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: transparent;
     }
   }
   .heart_empty {

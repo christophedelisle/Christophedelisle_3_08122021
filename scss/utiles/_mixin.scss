@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
 }
+@mixin flex_space-between {
+  display: flex;
+  justify-content: space-between;
+}
 @mixin btn {
   background: linear-gradient($secondaire, $primaire);
   height: 50px;
