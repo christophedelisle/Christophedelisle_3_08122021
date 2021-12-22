@@ -61,10 +61,12 @@
 .heart {
   &:hover {
     cursor: pointer;
+
     .heart_empty {
       display: none;
     }
     .heart_full {
+      transition: opacity 2s;
       opacity: 1;
       font-size: 30px;
       background: linear-gradient($secondaire, $primaire);

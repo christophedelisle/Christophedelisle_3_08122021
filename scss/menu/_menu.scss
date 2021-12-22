@@ -16,7 +16,7 @@
       font-family: Shrikhand;
     }
     .heart {
-      padding: 5px 20px 0px 0px;
+      margin: 5px 20px 0px 0px;
     }
   }
   &__section {
@@ -108,34 +108,10 @@
     justify-content: center;
     margin-bottom: 80px;
     font-size: 20px;
-    transition: transform 1s;
+
     &:hover {
-      transform: scale(1.05);
+      box-shadow: 5px 5px 8px 2px $gris3;
+      opacity: 0.7;
     }
   }
-}
-
-@keyframes slide {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.menu__section__article {
-  animation: slide 1.5s ease backwards;
-}
-#article1 {
-  animation-delay: 0.2s;
-}
-
-#article2 {
-  animation-delay: 0.4s;
-}
-
-#article3 {
-  animation-delay: 0.5s;
 }

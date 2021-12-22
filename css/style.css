@@ -1,3 +1,29 @@
+@keyframes slide-article {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu__section__article {
+  animation: slide-article 1.5s ease backwards;
+}
+
+.article1 {
+  animation-delay: 0.2s;
+}
+
+.article2 {
+  animation-delay: 0.4s;
+}
+
+.article3 {
+  animation-delay: 0.6s;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -81,10 +107,10 @@ header #image_menu img {
   justify-content: center;
   padding: 0px 20px;
   box-shadow: 5px 5px 8px 2px #e6e6e6;
-  transition: transform 1s;
 }
 .explorer__reserver__btn:hover {
-  transform: scale(1.05);
+  box-shadow: 5px 5px 8px 2px #828282;
+  opacity: 0.7;
 }
 .explorer h2 {
   margin: 0px;
@@ -213,6 +239,7 @@ header #image_menu img {
   display: none;
 }
 .heart:hover .heart_full {
+  transition: opacity 2s;
   opacity: 1;
   font-size: 30px;
   background: linear-gradient(#ff79da, #9356dc);
@@ -282,7 +309,7 @@ footer ul li a p {
   font-family: Shrikhand;
 }
 .menu__title .heart {
-  padding: 5px 20px 0px 0px;
+  margin: 5px 20px 0px 0px;
 }
 .menu__section {
   width: 100%;
@@ -386,36 +413,10 @@ footer ul li a p {
   justify-content: center;
   margin-bottom: 80px;
   font-size: 20px;
-  transition: transform 1s;
 }
 .menu__order__btn:hover {
-  transform: scale(1.05);
-}
-
-@keyframes slide {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.menu__section__article {
-  animation: slide 1.5s ease backwards;
-}
-
-#article1 {
-  animation-delay: 0.2s;
-}
-
-#article2 {
-  animation-delay: 0.4s;
-}
-
-#article3 {
-  animation-delay: 0.5s;
+  box-shadow: 5px 5px 8px 2px #828282;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */

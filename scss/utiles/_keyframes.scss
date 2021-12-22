@@ -1,0 +1,24 @@
+@keyframes slide-article {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu__section__article {
+  animation: slide-article 1.5s ease backwards;
+}
+.article1 {
+  animation-delay: 0.2s;
+}
+
+.article2 {
+  animation-delay: 0.4s;
+}
+
+.article3 {
+  animation-delay: 0.6s;
+}
