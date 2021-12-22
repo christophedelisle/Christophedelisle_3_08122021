@@ -9,8 +9,39 @@ body {
     color: black;
   }
 }
+
+.loading {
+  background: linear-gradient($secondaire, $primaire);
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  animation: back 2.5s linear;
+  &__spinner {
+    @include flex_center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-right: 20px solid $primaire;
+    border-left: 20px solid $secondaire;
+    border-top: 20px solid $tertiaire;
+    border-bottom: 20px solid $tertiaire;
+    border-radius: 50%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: spinner 2.5s infinite reverse both;
+  }
+}
+
 header {
-  #logo {
+  .logo {
     a {
       text-decoration: none;
       color: black;

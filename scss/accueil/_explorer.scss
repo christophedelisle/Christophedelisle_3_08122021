@@ -27,14 +27,6 @@
     a {
       text-decoration: none;
     }
-    &__btn {
-      @include btn;
-
-      &:hover {
-        box-shadow: 5px 5px 8px 2px $gris3;
-        opacity: 0.7;
-      }
-    }
   }
   h2 {
     margin: 0px;

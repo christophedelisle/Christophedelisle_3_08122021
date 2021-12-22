@@ -8,6 +8,12 @@
   flex-direction: column;
   align-items: center;
 
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
   &__title {
     @include flex_center;
     justify-content: space-between;
@@ -22,25 +28,42 @@
   &__section {
     width: 100%;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
     &__title {
-      &--underligne {
-        border-bottom: solid $tertiaire 3px;
-      }
+      display: inline-block;
+      position: relative;
       font-size: 20px;
       margin: 0px;
-      padding: 0px 0px 20px 0px;
+      margin-bottom: 10px;
+      padding: 0px 0px 10px 0px;
+      ::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 3px;
+        background-color: $tertiaire;
+      }
     }
     &__article {
+      z-index: 1;
       width: 100%;
       background-color: white;
       border-radius: 20px;
       margin-bottom: 15px;
       @include box-shadow;
       @include flex_space-between;
+
       .meal {
         width: 100%;
         @include flex_space-between;
+        overflow: hidden;
+
         &__set {
           width: 100%;
           @include flex_space-between;
@@ -61,6 +84,7 @@
             justify-content: space-between;
             padding: 10px 20px 15px 15px;
             p {
+              margin: 0px;
               overflow: hidden;
               text-overflow: ellipsis;
             }
@@ -75,13 +99,12 @@
         .animation {
           @include flex_center;
           justify-content: space-around;
-          order: 3;
           background-color: $tertiaire;
           color: white;
           font-size: 40px;
           border-radius: 0px 20px 20px 0px;
-          width: 0%;
-          transition: width 0.5s;
+          width: 0px;
+          transition: width 0.4s;
           overflow: hidden;
           i {
             transform: rotate(0deg);
@@ -99,19 +122,6 @@
           }
         }
       }
-    }
-  }
-
-  &__order__btn {
-    @include btn;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    font-size: 20px;
-
-    &:hover {
-      box-shadow: 5px 5px 8px 2px $gris3;
-      opacity: 0.7;
     }
   }
 }
