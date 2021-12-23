@@ -57,30 +57,3 @@
     }
   }
 }
-
-.heart {
-  &:hover {
-    cursor: pointer;
-
-    .heart_empty {
-      display: none;
-    }
-    .heart_full {
-      opacity: 1;
-      transition: opacity 2s;
-      font-size: 30px;
-      background: linear-gradient($secondaire, $primaire);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-  }
-  .heart_empty {
-    font-size: 30px;
-    color: $gris3;
-  }
-  .heart_full {
-    margin-top: -10px;
-    opacity: 0;
-  }
-}

@@ -19,6 +19,30 @@
   opacity: 0.8;
 }
 
+.heart .heart_empty {
+  font-size: 30px;
+  color: #828282;
+}
+.heart .heart_full {
+  margin-top: -10px;
+  opacity: 0;
+}
+.heart:hover {
+  cursor: pointer;
+}
+.heart:hover .heart_empty {
+  display: none;
+}
+.heart:hover .heart_full {
+  opacity: 1;
+  transition: opacity 2s;
+  font-size: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 @keyframes slide-article {
   from {
     transform: translateY(30px);
@@ -43,6 +67,10 @@
 
 .article3 {
   animation-delay: 0.6s;
+}
+
+.article4 {
+  animation-delay: 0.8s;
 }
 
 @keyframes spinner {
@@ -288,30 +316,6 @@ header #image_menu img {
 .restaurants__article__txt h3 {
   font-size: 22px;
   margin: 0px;
-}
-
-.heart:hover {
-  cursor: pointer;
-}
-.heart:hover .heart_empty {
-  display: none;
-}
-.heart:hover .heart_full {
-  opacity: 1;
-  transition: opacity 2s;
-  font-size: 30px;
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.heart .heart_empty {
-  font-size: 30px;
-  color: #828282;
-}
-.heart .heart_full {
-  margin-top: -10px;
-  opacity: 0;
 }
 
 footer {
