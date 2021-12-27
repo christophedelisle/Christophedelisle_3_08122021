@@ -87,18 +87,15 @@ body a {
   animation-delay: 0.8s;
 }
 
-.menu__section__article:nth-child(1) {
+/*.menu__section__article:nth-child(1) {
   background-color: blue;
 }
-
 .menu__section__article:nth-child(2) {
   background-color: orange;
 }
-
 .menu__section__article:nth-child(3) {
   background-color: red;
-}
-
+} */
 @keyframes spinner {
   0% {
     transform: scale(0.5) rotateZ(0);
@@ -407,7 +404,7 @@ footer ul li a p {
   margin-bottom: 10px;
   padding: 0px 0px 10px 0px;
 }
-.menu__section__title ::before {
+.menu__section__title :before {
   content: "";
   position: absolute;
   left: 0;
@@ -491,6 +488,9 @@ footer ul li a p {
 }
 
 @media all and (min-width: 769px) {
+  .fonctmnt {
+    padding-top: 20px;
+  }
   .fonctmnt h2 {
     align-self: center;
   }
@@ -506,19 +506,47 @@ footer ul li a p {
 
   .restaurants {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
   }
   .restaurants .articles {
     padding-top: 30px;
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .restaurants__article {
-    width: 40%;
+    width: 45%;
+  }
+
+  .menu__section {
+    width: 100%;
+    align-items: center;
+  }
+  .menu__section__title {
+    padding-left: 5px;
+  }
+  .menu__section__title ::before {
+    content: "";
+    width: 100%;
+  }
+
+  .article1 {
+    width: 90%;
+  }
+
+  .article2 {
+    width: 80%;
+  }
+
+  .article3 {
+    width: 70%;
+  }
+
+  .article4 {
+    width: 60%;
   }
 
   footer {
@@ -531,7 +559,6 @@ footer ul li a p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style: initial;
   }
 }
 
