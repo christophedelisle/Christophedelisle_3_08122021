@@ -4,6 +4,7 @@
   color: white;
   border-radius: 50px;
   width: 60%;
+  max-width: 500px;
   min-width: 200px;
   display: flex;
   align-items: center;
@@ -43,6 +44,19 @@
   color: transparent;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0px;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes slide-article {
   from {
     transform: translateY(30px);
@@ -73,6 +87,18 @@
   animation-delay: 0.8s;
 }
 
+.menu__section__article:nth-child(1) {
+  background-color: blue;
+}
+
+.menu__section__article:nth-child(2) {
+  background-color: orange;
+}
+
+.menu__section__article:nth-child(3) {
+  background-color: red;
+}
+
 @keyframes spinner {
   0% {
     transform: scale(0.5) rotateZ(0);
@@ -97,19 +123,6 @@
     opacity: 0;
   }
 }
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto";
-  margin: 0px;
-}
-body a {
-  text-decoration: none;
-  color: black;
-}
-
 .loading {
   background: linear-gradient(#ff79da, #9356dc);
   visibility: hidden;
@@ -207,7 +220,7 @@ header #image_menu img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px 30px 10px 30px;
+  padding: 40px 30px 40px 30px;
 }
 .fonctmnt a:visited {
   color: black;
@@ -358,8 +371,8 @@ footer ul li a p {
   margin-top: -40px;
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .menu .btn {
   display: flex;
@@ -382,8 +395,8 @@ footer ul li a p {
   width: 100%;
   padding-bottom: 30px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: flex-start;
 }
 .menu__section__title {
@@ -404,7 +417,6 @@ footer ul li a p {
   background-color: #99e2d0;
 }
 .menu__section__article {
-  z-index: 1;
   width: 100%;
   background-color: white;
   border-radius: 20px;
@@ -428,7 +440,6 @@ footer ul li a p {
   overflow: hidden;
 }
 .menu__section__article .meal__set__title {
-  width: 100%;
   font-size: 20px;
   margin: 0px;
   padding: 15px 0px 0px 15px;
@@ -477,6 +488,51 @@ footer ul li a p {
 }
 .menu__section__article .meal:hover .animation i {
   transform: rotate(360deg);
+}
+
+@media all and (min-width: 769px) {
+  .fonctmnt h2 {
+    align-self: center;
+  }
+  .fonctmnt ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .fonctmnt ul li {
+    width: 30%;
+    padding-right: 10px;
+  }
+
+  .restaurants {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .restaurants .articles {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurants__article {
+    width: 40%;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

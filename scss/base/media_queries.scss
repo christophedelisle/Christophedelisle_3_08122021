@@ -1,0 +1,47 @@
+//(max-width: 992px)//
+@media all and (min-width: 769px) {
+  .fonctmnt {
+    h2 {
+      align-self: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        width: 30%;
+        padding-right: 10px;
+      }
+    }
+  }
+  .restaurants {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+    .articles {
+      padding-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    &__article {
+      width: 40%;
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: initial;
+    }
+  }
+}
