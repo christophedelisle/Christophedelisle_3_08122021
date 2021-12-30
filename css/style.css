@@ -87,15 +87,6 @@ body a {
   animation-delay: 0.8s;
 }
 
-/*.menu__section__article:nth-child(1) {
-  background-color: blue;
-}
-.menu__section__article:nth-child(2) {
-  background-color: orange;
-}
-.menu__section__article:nth-child(3) {
-  background-color: red;
-}*/
 @keyframes spinner {
   0% {
     transform: scale(0.5) rotateZ(0);
