@@ -1,4 +1,4 @@
-#explorer {
+.explorer {
   @include flex_center;
   flex-direction: column;
   text-align: center;
@@ -9,7 +9,7 @@
     background-color: $gris2;
     justify-content: center;
     box-shadow: inset 0px 1px 4px $gris3;
-    &__point {
+    i {
       padding-right: 15px;
     }
   }
@@ -20,18 +20,16 @@
     width: 100%;
     background-color: $gris1;
     padding: 50px 0px;
+
     p {
       @include sides-padding;
     }
     a {
       text-decoration: none;
     }
-    &__btn {
-      @include btn;
-    }
-    h2 {
-      margin: 0px;
-      @include sides-padding;
-    }
+  }
+  h2 {
+    margin: 0px;
+    @include sides-padding;
   }
 }

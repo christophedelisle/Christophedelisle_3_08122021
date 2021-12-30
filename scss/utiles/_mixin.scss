@@ -8,16 +8,11 @@
   display: flex;
   align-items: center;
 }
-@mixin btn {
-  background: linear-gradient($secondaire, $primaire);
-  height: 50px;
-  color: rgb(255, 255, 255);
-  border-radius: 50px;
-  width: 60%;
-  min-width: 170px;
-  @include flex_center;
-  font-weight: 500;
+@mixin flex_space-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex_content-center {
+  display: flex;
   justify-content: center;
-  @include sides-padding;
-  @include box-shadow;
 }

@@ -1,0 +1,71 @@
+@media all and (min-width: 768px) {
+  .fonctmnt {
+    padding-top: 20px;
+    h2 {
+      align-self: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        width: 30%;
+        padding-right: 10px;
+      }
+    }
+  }
+  .restaurants {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    .articles {
+      @include flex_content-center;
+      padding-top: 30px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__article {
+      width: 45%;
+    }
+  }
+  .menu {
+    &__section {
+      width: 100%;
+      align-items: center;
+      &__title {
+        padding-left: 5px;
+        ::before {
+          content: "";
+          width: 100%;
+        }
+      }
+    }
+  }
+  .article1 {
+    width: 90%;
+  }
+
+  .article2 {
+    width: 80%;
+  }
+
+  .article3 {
+    width: 70%;
+  }
+
+  .article4 {
+    width: 60%;
+  }
+  footer {
+    @include flex_center;
+    flex-direction: column;
+
+    ul {
+      @include flex_center;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+}

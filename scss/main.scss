@@ -1,8 +1,12 @@
 @import "./utiles/mixin";
 @import "./utiles/variable";
+@import "./components/btn";
+@import "./base/base.scss";
+@import "./utiles/keyframes";
 @import "./layout/header";
-@import "./accueil/explorer";
-@import "./accueil/fonctionnement";
-@import "./accueil/choix_restaurants";
+@import "./pages/explorer";
+@import "./pages/fonctionnement";
+@import "./pages/choix_restaurants";
 @import "./layout/footer";
-@import "./menu/menu";
+@import "./pages/menu";
+@import "./base/media_queries.scss";
