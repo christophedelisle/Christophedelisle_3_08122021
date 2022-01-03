@@ -1,0 +1,55 @@
+@keyframes slide-article {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu__section__article {
+  animation: slide-article 1.5s ease both;
+}
+.article1 {
+  animation-delay: 0.2s;
+}
+
+.article2 {
+  animation-delay: 0.4s;
+}
+
+.article3 {
+  animation-delay: 0.6s;
+}
+
+.article4 {
+  animation-delay: 0.8s;
+}
+
+@keyframes spinner {
+  0% {
+    transform: scale(0.5) rotateZ(0);
+  }
+
+  50% {
+    transform: scale(2) rotateZ(360deg);
+  }
+
+  100% {
+    transform: scale(0.5) rotateZ(0deg);
+  }
+}
+@keyframes back {
+  0% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
