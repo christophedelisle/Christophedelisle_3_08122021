@@ -1,37 +1,189 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/christophedelisle/Projet-3/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Accueil</title>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+    <div class="loading">
+        <div class="loading__spinner">
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <h1> <a href="accueil.html"> ohmyfood</a></h1>
+        </div>
+    </header>
+    <main>
+        <section class=explorer>
+            <div class=explorer__map>
+                <i class="fas fa-map-marker-alt "></i>
+                <p>Paris, Belleville</p>
+            </div>
+            <div class=explorer__reserver>
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception,
+                    séléctionnés par nos soins.
+                </p>
+                <a class="btn" href="#">
+                    <p> Explorer nos restaurants</p>
+                </a>
+            </div>
+        </section>
+        <nav class="fonctmnt">
+            <h2>Fonctionnement</h2>
+            <ul>
+                <li class="fonctmnt__choice">
+                    <a href="#">
+                        <span class="fonctmnt__choice__num">1</span>
+                        <i class="fas fa-mobile-alt fonctmnt__choice__logo"></i>
+                        <p>Choisissez un restaurant</p>
+                    </a>
+                </li>
+                <li class="fonctmnt__choice">
+                    <a href="#">
+                        <span class="fonctmnt__choice__num">2</span>
+                        <i class="fas fa-list-ul fonctmnt__choice__logo"></i>
+                        <p>Composez votre menu</p>
+                    </a>
+                </li>
+                <li class="fonctmnt__choice">
+                    <a href="#">
+                        <span class="fonctmnt__choice__num">3</span>
+                        <i class="fas fa-store fonctmnt__choice__logo"></i>
+                        <p>Dégustez au restaurant</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="articles">
+                <article class="restaurants__article">
+                    <a href="menu_palette_du_gout.html">
+                        <div class="new">
+                            <p>Nouveau</p>
+                        </div>
+                        <div class="restaurants__article__img">
+                            <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="food">
+                        </div>
+                        <div class="restaurants__article__txt">
+                            <div class="txt">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart heart_empty" aria-hidden="true"></i>
+                                <div class="heart_full">
+                                    <i class="fas fa-heart " aria-hidden="true"> </i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurants__article">
+                    <a href="menu_note_enchantée.html">
+                        <div class="new">
+                            <p>Nouveau</p>
+                        </div>
+                        <div class="restaurants__article__img">
+                            <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="food">
+                        </div>
+                        <div class="restaurants__article__txt">
+                            <div class="txt">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart heart_empty" aria-hidden="true"></i>
+                                <div class="heart_full">
+                                    <i class="fas fa-heart " aria-hidden="true"> </i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurants__article">
+                    <a href="menu_a_la_française.html" target="_blank">
+                        <div class="restaurants__article__img">
+                            <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="food">
+                        </div>
+                        <div class="restaurants__article__txt">
+                            <div class="txt">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart heart_empty" aria-hidden="true"></i>
+                                <div class="heart_full">
+                                    <i class="fas fa-heart " aria-hidden="true"> </i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurants__article">
+                    <a href="menu_delice_des_sens.html">
+                        <div class="restaurants__article__img">
+                            <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="food">
+                        </div>
+                        <div class="restaurants__article__txt">
+                            <div class="txt">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="heart">
+                                <i class="far fa-heart heart_empty" aria-hidden="true"></i>
+                                <div class="heart_full">
+                                    <i class="fas fa-heart " aria-hidden="true"> </i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="logo">
+            <a href="accueil.html">ohmyfood</a>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fas fa-utensils logo"></i>
+                    <p>Proposer un restaurant</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-hands-helping logo"></i>
+                    <p>Devenir partenaire</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Mentions légales</p>
+                </a>
+            </li>
+            <li>
 
-### Markdown
+                <a href="mailto:mail@maill.fr">Contact</a>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            </li>
+        </ul>
+    </footer>
+</body>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/christophedelisle/Projet-3/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
