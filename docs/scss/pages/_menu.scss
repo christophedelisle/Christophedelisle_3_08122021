@@ -1,0 +1,122 @@
+.menu {
+  background-color: $gris1;
+  @include sides-padding;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -40px;
+  position: relative;
+  @include flex_center;
+  flex-direction: column;
+
+  .btn {
+    @include flex_content-center;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    @include flex_center;
+    justify-content: space-between;
+    width: 100%;
+    h1 {
+      font-family: Shrikhand;
+    }
+    .heart {
+      margin: 5px 20px 0px 0px;
+    }
+  }
+  &__section {
+    width: 100%;
+    padding-bottom: 30px;
+    @include flex_content-center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__title {
+      display: inline-block;
+      position: relative;
+      font-size: 20px;
+      margin: 0px;
+      margin-bottom: 10px;
+      padding: 0px 0px 10px 0px;
+      :before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 3px;
+        background-color: $tertiaire;
+      }
+    }
+    &__article {
+      width: 100%;
+      background-color: white;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      @include box-shadow;
+      @include flex_space-between;
+
+      .meal {
+        width: 100%;
+        @include flex_space-between;
+        overflow: hidden;
+
+        &__set {
+          width: 100%;
+          @include flex_space-between;
+          flex-direction: column;
+          white-space: nowrap;
+          overflow: hidden;
+
+          &__title {
+            font-size: 20px;
+            margin: 0px;
+            padding: 15px 0px 0px 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          &__complement {
+            @include flex_center;
+            justify-content: space-between;
+            padding: 10px 20px 15px 15px;
+            p {
+              margin: 0px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            .meal__price {
+              font-size: 18px;
+              margin: 0px;
+              overflow: visible;
+            }
+          }
+        }
+        .animation {
+          @include flex_center;
+          justify-content: space-around;
+          background-color: $tertiaire;
+          color: white;
+          font-size: 40px;
+          border-radius: 0px 20px 20px 0px;
+          width: 0px;
+          transition: width 0.4s;
+          overflow: hidden;
+          i {
+            transform: rotate(0deg);
+            transition: transform 0.5s ease-in-out;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          .animation {
+            @include flex_center;
+            width: 80px;
+            i {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
